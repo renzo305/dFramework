@@ -2,3 +2,5 @@
 /.env.example
 /input.png
 /screenshots
+node_modules
+node_modules
