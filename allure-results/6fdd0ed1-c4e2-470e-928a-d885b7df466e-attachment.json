@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//ul/li[3]/a[contains(text(), 'T-shirts')]"
+}

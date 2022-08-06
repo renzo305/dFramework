@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div/a[@class=\"logout\"]\"}\n  (Session info: chrome=103.0.5060.134)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x00F56463+2188387]\n\tOrdinal0 [0x00EEE461+1762401]\n\tOrdinal0 [0x00E03D78+802168]\n\tOrdinal0 [0x00E31880+989312]\n\tOrdinal0 [0x00E31B1B+989979]\n\tOrdinal0 [0x00E5E912+1173778]\n\tOrdinal0 [0x00E4C824+1099812]\n\tOrdinal0 [0x00E5CC22+1166370]\n\tOrdinal0 [0x00E4C5F6+1099254]\n\tOrdinal0 [0x00E26BE0+945120]\n\tOrdinal0 [0x00E27AD6+948950]\n\tGetHandleVerifier [0x011F71F2+2712546]\n\tGetHandleVerifier [0x011E886D+2652765]\n\tGetHandleVerifier [0x00FE002A+520730]\n\tGetHandleVerifier [0x00FDEE06+516086]\n\tOrdinal0 [0x00EF468B+1787531]\n\tOrdinal0 [0x00EF8E88+1805960]\n\tOrdinal0 [0x00EF8F75+1806197]\n\tOrdinal0 [0x00F01DF1+1842673]\n\tBaseThreadInitThunk [0x76CDFA29+25]\n\tRtlGetAppContainerNamedObjectPath [0x778F7A9E+286]\n\tRtlGetAppContainerNamedObjectPath [0x778F7A6E+238]\n"
+}
