@@ -71,17 +71,17 @@ class CreateAccount extends Page{
         }
     }
 
-    async clickTitleRadioBtn(choice: number){
-        try{
-            return x = obj.titleCreate[choice]
-            await this.titleRadioBtn.scrollIntoView()
-            await this.click(await this.titleRadioBtn)
+    // async clickTitleRadioBtn(choice: number){
+    //     try{
+    //         return x = obj.titleCreate[choice]
+    //         await this.titleRadioBtn.scrollIntoView()
+    //         await this.click(await this.titleRadioBtn)
             
-        }
-        catch(err){
-            err.message = 'Error clicking sign-in: ${err.message}'
-        }
-    }
+    //     }
+    //     catch(err){
+    //         err.message = 'Error clicking sign-in: ${err.message}'
+    //     }
+    // }
 
     async clickSignIn(){
         try{

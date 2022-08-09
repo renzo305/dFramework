@@ -37,8 +37,8 @@ export default class Page{
         await browser.pause(2000)
     }
 
-    async radioBtn(eleChild:WebdriverIO.Element, eleParent:WebdriverIO.ElementArray, choice: number){
-        await eleParent.find(eleChild, choice)
+//     async radioBtn(eleChild:WebdriverIO.Element, eleParent:WebdriverIO.ElementArray, choice: number){
+//         await eleParent.find(eleChild, choice)
 
-    }
-}
+//     }
+ }
