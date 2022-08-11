@@ -37,8 +37,30 @@ export default class Page{
         await browser.pause(2000)
     }
 
-//     async radioBtn(eleChild:WebdriverIO.Element, eleParent:WebdriverIO.ElementArray, choice: number){
-//         await eleParent.find(eleChild, choice)
+    async radioBtn(/*eleChild: WebdriverIO.Element, */eleChild: WebdriverIO.Element,  choice: string){
+        // let ele = await eleChild.$[choice];
+        // ele.click()
+        // // for(let i = 0; i < ele.length; i++){
+        // //         // await eleChoice.findIndex(eleChoice, choice);
+        // //         if(i = choice){
+        // //             let chosenOpt = eleChoice[choice]
+        // //             await chosenOpt.click()
+        // //         }
 
-//     }
+
+        // //     }
+
+        let eleChildArr = await $$(eleChild)
+        let choiceStrArr = [];
+        for(let i = 0; i < eleChildArr.length; i++){
+            let choiceStr = await eleChildArr[i].getText();
+            choiceStrArr.push(choiceStr);
+        }
+
+        await choiceStrArr[choice].click();
+        await browser.pause(2000)
+
+
+
+    }
  }

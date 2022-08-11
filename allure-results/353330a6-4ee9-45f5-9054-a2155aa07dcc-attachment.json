@@ -1,0 +1,4 @@
+{
+  "using": "xpath",
+  "value": "//span/input[@type=\"radio\" and @name = \"id_gender\"]/ancestor::div[@class = \"radio-inline\"]"
+}

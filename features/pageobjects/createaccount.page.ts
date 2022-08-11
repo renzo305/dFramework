@@ -14,7 +14,7 @@ class CreateAccount extends Page{
     get pwordInputBox(){ return $(obj.pwordCreate)}
     get fnameInputBox(){ return $(obj.fnameCreate)}
     get lnameInputBox(){ return $(obj.lnameCreate)}
-    get titleRadioBtn(){ return $$(obj.titleCreate[x])}
+    get titleRadioBtn(){ return $(obj.titleCreate)}
     get signinBtn(){ return $(obj.loginEle)}
     get createAccBtn(){ return $(obj.btnCreate)}
     get createAccEmail(){ return $(obj.emailCreate)}
@@ -71,17 +71,18 @@ class CreateAccount extends Page{
         }
     }
 
-    // async clickTitleRadioBtn(choice: number){
-    //     try{
-    //         return x = obj.titleCreate[choice]
-    //         await this.titleRadioBtn.scrollIntoView()
-    //         await this.click(await this.titleRadioBtn)
+    async clickTitleRadioBtn(choice: string){
+        try{
             
-    //     }
-    //     catch(err){
-    //         err.message = 'Error clicking sign-in: ${err.message}'
-    //     }
-    // }
+            await this.radioBtn(await this.titleRadioBtn, choice)
+            await this.titleRadioBtn.scrollIntoView()
+            await this.click(await this.titleRadioBtn)
+            
+        }
+        catch(err){
+            err.message = 'Error clicking sign-in: ${err.message}'
+        }
+    }
 
     async clickSignIn(){
         try{
@@ -119,7 +120,7 @@ class CreateAccount extends Page{
 
    
 
-    async signInToApp(email:string, password: string, choice: number, fname: string, lname: string){
+    async signInToApp(email:string, password: string, choice: string, fname: string, lname: string){
         try{
             await this.clickSignIn()
             await this.enterEmailCreate(email)

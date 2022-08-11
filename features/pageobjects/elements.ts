@@ -1,11 +1,11 @@
 
 export class LoginElements {
-    readonly login: string;
-    readonly email: string;
-    readonly pword: string;
-    readonly logout: string;
-    readonly signin: string;
-    readonly logo: string;
+    public login: string;
+    public email: string;
+    public pword: string;
+    public logout: string;
+    public signin: string;
+    public logo: string;
 
 
     public constructor(login: string, email: string, pword: string, logout: string, signin: string, logo: string){
@@ -56,7 +56,7 @@ export const signIn = new LoginElements
         );
 
 export class Shopping{
-    readonly tab_Tshirt: string;
+    public tab_Tshirt: string;
     
 
 
@@ -92,16 +92,16 @@ export const tshirtTab = shopping.getTshirt()
 
 //Create Account
 export class CreateAccElements {
-    readonly emailCreate: string;
-    readonly title: string[];
-    readonly fname: string;
-    readonly lname: string;
-    readonly pwordCreate: string;
-    readonly buttonCreate: string;
+    public emailCreate: string;
+    public title: string;
+    public fname: string;
+    public lname: string;
+    public pwordCreate: string;
+    public buttonCreate: string;
     //Address Section
 
 
-    public constructor(emailCreate: string, fname: string, lname: string, title: string[], pwordCreate:string, buttonCreate:string )
+    public constructor(emailCreate: string, fname: string, lname: string, title: string, pwordCreate:string, buttonCreate:string )
     {
         this.emailCreate = emailCreate; 
         this.fname = fname;
@@ -124,7 +124,7 @@ export class CreateAccElements {
         return this.lname;
     }
 
-    public getTitle():string[]{
+    public getTitle():string{
         return this.title;
     }
      
@@ -137,13 +137,8 @@ export class CreateAccElements {
     }
     
 }
-function getTitleOptions(x){
-    let title1 =  '//div/span/input[@id = "id_gender1"]'
-    let title2 = '//div/span/input[@id = "id_gender2"]'
-    return [title1, title2]
-}
-var x;
-let options = getTitleOptions(x);
+
+
 
 
 export const CreateAcc = new CreateAccElements
@@ -151,7 +146,7 @@ export const CreateAcc = new CreateAccElements
         '//div/input[@id="email_create"]',
         '//input[@id="customer_firstname"]',
         '//input[@id="customer_lastname"]',
-        options,
+        '//span/input[@type="radio" and @name = "id_gender"]/ancestor::div/div[@class = "radio-inline"]',
         '//input[@type="password"]',
         '//button[@id="SubmitCreate"]' 
         );
