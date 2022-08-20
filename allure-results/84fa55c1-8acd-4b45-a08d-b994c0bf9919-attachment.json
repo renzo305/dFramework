@@ -1,0 +1,5 @@
+{
+  "error": "no such element",
+  "message": "no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span/input[@type=\"radio\" and @name = \"id_gender\"]/ancestor::div/div[@class = \"radio-inline\"]\"}\n  (Session info: chrome=104.0.5112.101)",
+  "stacktrace": "Backtrace:\n\tOrdinal0 [0x00896463+2188387]\n\tOrdinal0 [0x0082E461+1762401]\n\tOrdinal0 [0x00743D78+802168]\n\tOrdinal0 [0x00771880+989312]\n\tOrdinal0 [0x00771B1B+989979]\n\tOrdinal0 [0x0079E912+1173778]\n\tOrdinal0 [0x0078C824+1099812]\n\tOrdinal0 [0x0079CC22+1166370]\n\tOrdinal0 [0x0078C5F6+1099254]\n\tOrdinal0 [0x00766BE0+945120]\n\tOrdinal0 [0x00767AD6+948950]\n\tGetHandleVerifier [0x00B371F2+2712546]\n\tGetHandleVerifier [0x00B2886D+2652765]\n\tGetHandleVerifier [0x0092002A+520730]\n\tGetHandleVerifier [0x0091EE06+516086]\n\tOrdinal0 [0x0083468B+1787531]\n\tOrdinal0 [0x00838E88+1805960]\n\tOrdinal0 [0x00838F75+1806197]\n\tOrdinal0 [0x00841DF1+1842673]\n\tBaseThreadInitThunk [0x77426739+25]\n\tRtlGetFullPathName_UEx [0x778390AF+1215]\n\tRtlGetFullPathName_UEx [0x7783907D+1165]\n"
+}
